@@ -2,58 +2,69 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gêneros Musicais</title>
-    <link rel="stylesheet" href="style.css">
-     <script src="./main.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gêneros Musicais</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="./main.js" defer></script>
 </head>
 
 <body>
-    <nav>
-        <button id="toggle-dark" class="icon-btn">🌙</button>
-    </nav>
-    <div class="galeria">
-        <div class="card">
-            <img src="./Imagens/rock.png" alt="Rock">
-            <div class="nome">Rock</div>
-        </div>
+  <nav class="d-flex justify-content-between align-items-center px-4 py-2">
+    <button id="toggle-dark" class="icon-btn">🌙</button>
 
-        <div class="card">
-            <img src="./Imagens/Rap.png" alt="Rap">
-            <div class="nome">Rap</div>
-        </div>
-
-        <div class="card">
-            <img src="./Imagens/rap-nacional.png" alt="Rap">
-            <div class="nome">Rap Nacional</div>
-        </div>
-
-        <div class="card">
-            <img src="./Imagens/kpop.png" alt="K-pop">
-            <div class="nome">K-pop</div>
-        </div>
-
-        <div class="card">
-            <img src="./Imagens/mpb.png" alt="MPB">
-            <div class="nome">MPB</div>
-        </div>
-
-        <div class="card">
-            <img src="./Imagens/pop.png" alt="Pop">
-            <div class="nome">Pop</div>
-        </div>
-
-        <div class="card">
-            <img src="./Imagens/indie.png" alt="Indie">
-            <div class="nome">Indie</div>
-        </div>
-
-        <div class="card">
-            <img src="./Imagens/r&b.png" alt="R&B">
-            <div class="nome">R&B</div>
-        </div>
-    </div>
+    <ul class="nav nav-underline">
+      <li class="nav-item">
+        <a class="nav-link" href="./index.html">Inicial</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page">Músicas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./animes.html">Animes</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="galeria">
+    <a href="./rock.html">
+      <div class="card">
+        <img src="./Imagens/Música/rock.png" alt="Rock">
+        <div class="nome">Rock</div>
+      </div>
+    </a>
+    <a href="./rap.html">
+      <div class="card">
+        <img src="./Imagens/Música/Rap.png" alt="Rap">
+        <div class="nome">Rap</div>
+      </div>
+    </a>
+    <a href="./nacional.html">
+      <div class="card">
+        <img src="./Imagens/Música/rap-nacional.jpg" alt="Rap">
+        <div class="nome">Rap Nacional</div>
+      </div>
+    </a>
+    <a href="./kpop.html">
+      <div class="card">
+        <img src="./Imagens/Música/kpop.png" alt="K-pop">
+        <div class="nome">K-pop</div>
+      </div>
+    </a>
+    <a href="./indie.html">
+      <div class="card">
+        <img src="./Imagens/Música/indie.jpg" alt="Quiz do gênero Indie">
+        <div class="nome">Indie</div>
+      </div>
+    </a>
+    <a href="./pop.html">
+      <div class="card">
+        <img src="./Imagens/Música/pop.jpg" alt="Pop">
+        <div class="nome">Pop</div>
+      </div>
+    </a>
+  </div>
 </body>
 
 </html>

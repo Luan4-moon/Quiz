@@ -6,46 +6,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Galeria de Animes</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
    <script src="./main.js" defer></script>
 </head>
 
 <body>
-  <nav>
-    <button id="toggle-dark" class="icon-btn">🌙</button>
-  </nav>
+<nav class="d-flex justify-content-between align-items-center px-4 py-2">
+  <button id="toggle-dark" class="icon-btn">🌙</button>
+
+  <ul class="nav nav-underline">
+        <li class="nav-item">
+      <a class="nav-link" href="./index.html">Inicial</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page">Animes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./musica.html">Músicas</a>
+    </li>
+  </ul>
+</nav>
+
   <div class="galeria">
+    <a href="./onepiece.html">
     <div class="card">
-      <img src="./Imagens/one-piece.png" alt="One Piece" />
+      <img src="./Imagens/Animes/one-piece.png" alt="One Piece" />
       <div class="nome">One Piece</div>
     </div>
+    </a>
+    <a href="./bleach.html">
     <div class="card">
-      <img src="./Imagens/bleach.png" alt="Bleach" />
+      <img src="./Imagens/Animes/bleach.png" alt="Bleach" />
       <div class="nome">Bleach</div>
     </div>
+    </a>
+    <a href="./hanako.html">
     <div class="card">
-      <img src="./Imagens/hanako.png" alt="Hanako-kun" />
+      <img src="./Imagens/Animes/hanako.png" alt="Hanako-kun" />
       <div class="nome">Hanako-kun</div>
     </div>
+    </a>
+    <a href="./hellsing.html">
     <div class="card">
-      <img src="./Imagens/Hellsing.png" alt="Hellsing Ultimate" />
+      <img src="./Imagens/Animes/Hellsing.png" alt="Hellsing Ultimate" />
       <div class="nome">Hellsing Ultimate</div>
     </div>
+    </a>
+    <a href="./demon.html">
     <div class="card">
-      <img src="./Imagens/demon-slayer.png" alt="Demon Slayer" />
+      <img src="./Imagens/Animes/demon-slayer.png" alt="Demon Slayer" />
       <div class="nome">Demon Slayer</div>
     </div>
+    </a>
+    <a href="./dandadan.html">
     <div class="card">
-      <img src="./Imagens/dandadan.png" alt="Dan Da Dan" />
+      <img src="./Imagens/Animes/dandadan.png" alt="Dan Da Dan" />
       <div class="nome">Dan Da Dan</div>
     </div>
+    </a>
+    <a href="./naruto.html">
     <div class="card">
-      <img src="./Imagens/naruto.png" alt="Naruto" />
+      <img src="./Imagens/Animes/naruto.png" alt="Naruto" />
       <div class="nome">Naruto</div>
     </div>
+    </a>
+    <a href="./jjk.html">
     <div class="card">
-      <img src="./Imagens/jjk.png" alt="Jujutsu Kaisen" />
+      <img src="./Imagens/Animes/jjk.png" alt="Jujutsu Kaisen" />
       <div class="nome">Jujutsu Kaisen</div>
     </div>
+    </a>
   </div>
 </body>
 
