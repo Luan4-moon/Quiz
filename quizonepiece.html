@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quiz One Piece</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <nav class="d-flex justify-content-between align-items-center px-4 py-2">
+        <button id="toggle-dark" class="icon-btn">🌙</button>
+
+        <ul class="nav nav-underline">
+
+
+            <li class="nav-item">
+                <a class="nav-link" href="./onepiece.html">Voltar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page">Quiz One Piece</a>
+            </li>
+    </nav>
+    <div class="quiz-container">
+        <h1>Quiz One Piece</h1>
+        <div class="question" id="question-1">
+            <img src="./Imagens/Animes/quiz-one-piece/n1.jpeg" alt="imagem de referencia de uma ilha por ia"
+                class="quiz-image-facil">
+            <h2>Qual foi a primeira ilha que o Bando do Chapéu de Palha visitou após entrar na Grand Line?</h2>
+
+            <div class="answer-row">
+                <input type="radio" id="ans1" name="answer" value="Whiskey Peak" />
+                <button type="button" class="answer-btn" data-for="ans1" data-correct="true">Whiskey Peak</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="ans2" name="answer" value="Drum Island" />
+                <button type="button" class="answer-btn" data-for="ans2" data-correct="false">Drum Island</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="ans3" name="answer" value="Alabasta" />
+                <button type="button" class="answer-btn" data-for="ans3" data-correct="false">Alabasta</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="ans4" name="answer" value="Loguetown" />
+                <button type="button" class="answer-btn" data-for="ans4" data-correct="false">Loguetown</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="ans5" name="answer" value="Little Garden" />
+                <button type="button" class="answer-btn" data-for="ans5" data-correct="false">Little Garden</button>
+            </div>
+            <button class="next-btn" data-next="question-2">Próxima</button>
+        </div>
+
+
+        <div class="question" id="question-2" style="display:none;">
+            <img src="./Imagens/Animes/quiz-one-piece/n2.jpeg" alt="imagem de referencia de uma ilha por ia"
+                class="quiz-image-facil">
+            <h2>Qual é o nome do navio original do Bando do Chapéu de Palha?</h2>
+
+            <div class="answer-row">
+                <input type="radio" id="q2-ans1" name="answer-2" value="Going Merry" />
+                <button type="button" class="answer-btn" data-for="q2-ans1" data-correct="true">Going Merry</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q2-ans2" name="answer-2" value="Thousand Sunny" />
+                <button type="button" class="answer-btn" data-for="q2-ans2" data-correct="false">Thousand Sunny</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q2-ans3" name="answer-2" value="Oro Jackson" />
+                <button type="button" class="answer-btn" data-for="q2-ans3" data-correct="false">Oro Jackson</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q2-ans4" name="answer-2" value="Moby Dick" />
+                <button type="button" class="answer-btn" data-for="q2-ans4" data-correct="false">Moby Dick</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q2-ans5" name="answer-2" value="Red Force" />
+                <button type="button" class="answer-btn" data-for="q2-ans5" data-correct="false">Red Force</button>
+            </div>
+            <button class="next-btn" data-next="question-3" style="display:none;">Próxima</button>
+        </div>
+        <div class="question" id="question-3" style="display:none;">
+            <img src="./Imagens/Animes/quiz-one-piece/n3.png" alt="imagem de referencia de uma ilha por ia"
+                class="quiz-image-facil">
+            <h2>Como se chama a espada que Zoro recebeu de Kuina?</h2>
+
+            <div class="answer-row">
+                <input type="radio" id="q3-ans1" name="answer-3" value="Yubashiri" />
+                <button type="button" class="answer-btn" data-for="q3-ans1" data-correct="false">Yubashiri</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q3-ans2" name="answer-3" value="Shusui" />
+                <button type="button" class="answer-btn" data-for="q3-ans2" data-correct="false">Shusui</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q3-ans3" name="answer-3" value="Enma" />
+                <button type="button" class="answer-btn" data-for="q3-ans3" data-correct="false">Enma</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q3-ans4" name="answer-3" value="Sandai Kitetsu" />
+                <button type="button" class="answer-btn" data-for="q3-ans4" data-correct="false">Sandai Kitetsu</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q3-ans5" name="answer-3" value="Wado Ichimonji" />
+                <button type="button" class="answer-btn" data-for="q3-ans5" data-correct="true">Wado Ichimonji</button>
+            </div>
+            <button class="next-btn" data-next="question-4" style="display:none;">Próxima</button>
+        </div>
+        <div class="question" id="question-4" style="display:none;">
+            <img src="./Imagens/Animes/quiz-one-piece/n4.jpeg" alt="imagem de referencia de uma ilha por ia"
+                class="quiz-image-facil">
+            <h2> Qual é o nome do plano de Baroque Works?</h2>
+
+            <div class="answer-row">
+                <input type="radio" id="q4-ans1" name="answer-4" value="Missão Oasis" />
+                <button type="button" class="answer-btn" data-for="q4-ans1" data-correct="false">Missão Oasis</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q4-ans2" name="answer-4" value="Projeto D" />
+                <button type="button" class="answer-btn" data-for="q4-ans2" data-correct="false">Projeto D</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q4-ans3" name="answer-4" value="Operação Sphinx" />
+                <button type="button" class="answer-btn" data-for="q4-ans3" data-correct="true">Operação Sphinx</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q4-ans4" name="answer-4" value="Plano Centaur" />
+                <button type="button" class="answer-btn" data-for="q4-ans4" data-correct="false">Plano Centaur</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q4-ans5" name="answer-4" value="Operação Tornado" />
+                <button type="button" class="answer-btn" data-for="q4-ans5" data-correct="false">Operação
+                    Tornado</button>
+            </div>
+            <button class="next-btn" data-next="question-5" style="display:none;">Próxima</button>
+        </div>
+        <div class="question" id="question-5" style="display:none;">
+            <img src="./Imagens/Animes/quiz-one-piece/n5.jpeg" alt="imagem de referencia de uma ilha por ia"
+                class="quiz-image-facil">
+            <h2> Qual a habilidade principal do personagem "Jinbe"?</h2>
+
+            <div class="answer-row">
+                <input type="radio" id="q5-ans1" name="answer-5" value="Jiu-Jitsu das Águas" />
+                <button type="button" class="answer-btn" data-for="q5-ans1" data-correct="false">Jiu-Jitsu das
+                    Águas</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q5-ans2" name="answer-5" value="Controle das Águas" />
+                <button type="button" class="answer-btn" data-for="q5-ans2" data-correct="false">Controle das
+                    Águas</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q5-ans3" name="answer-5" value="Técnicas de espada" />
+                <button type="button" class="answer-btn" data-for="q5-ans3" data-correct="false">Técnicas de
+                    espada</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q5-ans4" name="answer-5" value="Karater dos Homens-Peixes" />
+                <button type="button" class="answer-btn" data-for="q5-ans4" data-correct="true">Karater dos
+                    Homens-Peixes</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q5-ans5" name="answer-5" value="Controle sobre Peixes" />
+                <button type="button" class="answer-btn" data-for="q5-ans5" data-correct="false">Controle sobre
+                    Peixes</button>
+            </div>
+            <button class="next-btn" data-next="question-6" style="display:none;">Próxima</button>
+        </div>
+        <div class="question" id="question-6" style="display:none;">
+            <img src="./Imagens/Animes/quiz-one-piece/n6.jpeg" alt="imagem de referencia de uma ilha por ia"
+                class="quiz-image-medio">
+            <h2>Qual é o nome da planta que o Dr. Hiluluk acreditava poder curar qualquer doença?</h2>
+
+            <div class="answer-row">
+                <input type="radio" id="q6-ans1" name="answer-6" value="Girassol" />
+                <button type="button" class="answer-btn" data-for="q6-ans1" data-correct="false">Girassol</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q6-ans2" name="answer-6" value="Sakura" />
+                <button type="button" class="answer-btn" data-for="q6-ans2" data-correct="true">Sakura </button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q6-ans3" name="answer-6" value="Rosa" />
+                <button type="button" class="answer-btn" data-for="q6-ans3" data-correct="false">Rosa</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q6-ans4" name="answer-6" value="Amber Lead" />
+                <button type="button" class="answer-btn" data-for="q6-ans4" data-correct="false">Amber Lead</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q6-ans5" name="answer-6" value="Lily" />
+                <button type="button" class="answer-btn" data-for="q6-ans5" data-correct="false">Lily</button>
+            </div>
+            <button class="next-btn" data-next="question-7">Próxima</button>
+        </div>
+
+
+        <div class="question" id="question-7" style="display:none;">
+            <img src="./Imagens/Animes/quiz-one-piece/n7.jpeg" alt="imagem de referencia de uma ilha por ia"
+                class="quiz-image-facil">
+            <h2>Quem foi o primeiro personagem a ser mostrado com uma recompensa?</h2>
+
+            <div class="answer-row">
+                <input type="radio" id="q7-ans1" name="answer-7" value="Luffy" />
+                <button type="button" class="answer-btn" data-for="q7-ans1" data-correct="false">Luffy</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q7-ans2" name="answer-7" value="Roger" />
+                <button type="button" class="answer-btn" data-for="q7-ans2" data-correct="false">Roger</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q7-ans3" name="answer-7" value="Zoro" />
+                <button type="button" class="answer-btn" data-for="q7-ans3" data-correct="false">Zoro</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q7-ans4" name="answer-7" value="Buggy" />
+                <button type="button" class="answer-btn" data-for="q7-ans4" data-correct="true">Buggy</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q7-ans5" name="answer-7" value="Alvida" />
+                <button type="button" class="answer-btn" data-for="q7-ans5" data-correct="false">Alvida</button>
+            </div>
+            <button class="next-btn" data-next="question-8" style="display:none;">Próxima</button>
+        </div>
+        <div class="question" id="question-8" style="display:none;">
+            <img src="./Imagens/Animes/quiz-one-piece/n8.png" alt="imagem de referencia de uma ilha por ia"
+                class="quiz-image-facil">
+            <h2>Quantos anos se passaram entre o nascimento de Gol D. Roger e a execução dele?</h2>
+
+            <div class="answer-row">
+                <input type="radio" id="q8-ans1" name="answer-8" value="19 a 20" />
+                <button type="button" class="answer-btn" data-for="q8-ans1" data-correct="false">19 a 20</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q8-ans2" name="answer-8" value="50 a 55" />
+                <button type="button" class="answer-btn" data-for="q8-ans2" data-correct="false">50 a 55</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q8-ans3" name="answer-8" value="30 a 40" />
+                <button type="button" class="answer-btn" data-for="q8-ans3" data-correct="true">30 a 40</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q8-ans4" name="answer-8" value="35 a 45" />
+                <button type="button" class="answer-btn" data-for="q8-ans4" data-correct="false">35 a 45</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q8-ans5" name="answer-8" value="60" />
+                <button type="button" class="answer-btn" data-for="q8-ans5" data-correct="false">60</button>
+            </div>
+            <button class="next-btn" data-next="question-9" style="display:none;">Próxima</button>
+        </div>
+        <div class="question" id="question-9" style="display:none;">
+            <img src="./Imagens/Animes/quiz-one-piece/n9.jpeg" alt="imagem de referencia de uma ilha por ia"
+                class="quiz-image-facil">
+            <h2> Qual é o nome do plano de Baroque Works?</h2>
+
+            <div class="answer-row">
+                <input type="radio" id="q9-ans1" name="answer-9" value="O tesouro da cidade de ouro repousa aqui" />
+                <button type="button" class="answer-btn" data-for="q9-ans1" data-correct="false">"O tesouro da cidade de ouro repousa aqui"</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q9-ans2" name="answer-9" value="Aqui jaz o Reino de Shandora" />
+                <button type="button" class="answer-btn" data-for="q9-ans2" data-correct="false">"Aqui jaz o Reino de Shandora"</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q9-ans3" name="answer-9" value="Pelo povo de Shandora, o som da libertação" />
+                <button type="button" class="answer-btn" data-for="q9-ans3" data-correct="false">"Pelo povo de Shandora, o som da libertação"</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q9-ans4" name="answer-9" value="Nós viemos aqui e iremos nos encontrar novamente. Gold Roger"/>
+                <button type="button" class="answer-btn" data-for="q9-ans4" data-correct="true">"Nós viemos aqui e iremos nos encontrar novamente. Gold Roger"</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q9-ans5" name="answer-9" value="Deus protegerá nossa cidade sagrada" />
+                <button type="button" class="answer-btn" data-for="q9-ans5" data-correct="false">"Deus protegerá nossa cidade sagrada"</button>
+            </div>
+            <button class="next-btn" data-next="question-10" style="display:none;">Próxima</button>
+        </div>
+        <div class="question" id="question-10" style="display:none;">
+            <img src="./Imagens/Animes/quiz-one-piece/n10.png" alt="imagem de referencia de uma ilha por ia"
+                class="quiz-image-facil">
+            <h2>Quem disse a frase: "Mesmo que eu morra, não direi nada. Nós somos amigos!"</h2>
+
+            <div class="answer-row">
+                <input type="radio" id="q10-ans1" name="answer-10" value="Nico Robin" />
+                <button type="button" class="answer-btn" data-for="q10-ans1" data-correct="true">Nico Robin</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q10-ans2" name="answer-10" value="Monkey D. Luffy" />
+                <button type="button" class="answer-btn" data-for="q10-ans2" data-correct="false">Monkey D. Luffy</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q10-ans3" name="answer-10" value="Vinsmoke Sanji" />
+                <button type="button" class="answer-btn" data-for="q10-ans3" data-correct="false">Vinsmoke Sanji</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q10-ans4" name="answer-10" value="Roronoa Zoro" />
+                <button type="button" class="answer-btn" data-for="q10-ans4" data-correct="false">Roronoa Zoro</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q10-ans5" name="answer-10" value="Koby" />
+                <button type="button" class="answer-btn" data-for="q10-ans5" data-correct="false">Koby</button>
+            </div>
+            <button class="next-btn" data-next="question-11" style="display:none;">Próxima</button>
+        </div>
+        <div class="question" id="question-11" style="display:none;">
+            <img src="./Imagens/Animes/quiz-one-piece/n11.png" alt="imagem de referencia de uma ilha por ia"
+                class="quiz-image-dificil">
+            <h2>Quem é o único personagem confirmado que lutou contra Gol D. Roger e sobreviveu sem ser da tripulação dele ou do Garp?</h2>
+
+            <div class="answer-row">
+                <input type="radio" id="q11-ans1" name="answer-11" value="Shiki" />
+                <button type="button" class="answer-btn" data-for="q11-ans1" data-correct="false">Shiki</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q11-ans2" name="answer-11" value="Figarland Garling" />
+                <button type="button" class="answer-btn" data-for="q11-ans2" data-correct="false">Figarland Garling</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q11-ans3" name="answer-11" value="Kozuki Oden" />
+                <button type="button" class="answer-btn" data-for="q11-ans3" data-correct="true">Kozuki Oden</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q11-ans4" name="answer-11" value="Whitebeard" />
+                <button type="button" class="answer-btn" data-for="q11-ans4" data-correct="false">Whitebeard</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q11-ans5" name="answer-11" value="Sengoku, o Buda" />
+                <button type="button" class="answer-btn" data-for="q11-ans5" data-correct="false">Sengoku, o Buda</button>
+            </div>
+            <button class="next-btn" data-next="question-12" style="display:none;">Próxima</button>
+        </div>
+        <div class="question" id="question-12" style="display:none;">
+            <img src="./Imagens/Animes/quiz-one-piece/n12.jpeg" alt="imagem de referencia de uma ilha por ia"
+                class="quiz-image-dificil">
+            <h2>Qual era a alcunha da vice-almirante Tsuru?</h2>
+
+            <div class="answer-row">
+                <input type="radio" id="q12-ans1" name="answer-12" value="A Tática de Ferro" />
+                <button type="button" class="answer-btn" data-for="q12-ans1" data-correct="false">"A Tática de Ferro"</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q12-ans2" name="answer-12" value="Grande Estratégista" />
+                <button type="button" class="answer-btn" data-for="q12-ans2" data-correct="true">"Grande Estratégista"</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q12-ans3" name="answer-12" value="A Teia da Justiça" />
+                <button type="button" class="answer-btn" data-for="q12-ans3" data-correct="false">"A Teia da Justiça"</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q12-ans4" name="answer-12" value="A Tempestade de Justiça" />
+                <button type="button" class="answer-btn" data-for="q12-ans4" data-correct="false">"A Tempestade de Justiça"</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q12-ans5" name="answer-12" value="A Dama do Mar" />
+                <button type="button" class="answer-btn" data-for="q12-ans5" data-correct="false">"A Dama do Mar"</button>
+            </div>
+            <button class="next-btn" data-next="question-13">Próxima</button>
+        </div>
+
+
+        <div class="question" id="question-13" style="display:none;">
+            <img src="./Imagens/Animes/quiz-one-piece/n13.jpeg" alt="imagem de referencia de uma ilha por ia"
+                class="quiz-image-dificil">
+            <h2>Qual é o número do laboratório onde Caesar Clown fazia experimentos em Punk Hazard?</h2>
+
+            <div class="answer-row">
+                <input type="radio" id="q13-ans1" name="answer-13" value="G-0" />
+                <button type="button" class="answer-btn" data-for="q13-ans1" data-correct="false">G-0</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q13-ans2" name="answer-13" value="G-1" />
+                <button type="button" class="answer-btn" data-for="q13-ans2" data-correct="false">G-1</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q13-ans3" name="answer-13" value="G-2" />
+                <button type="button" class="answer-btn" data-for="q13-ans3" data-correct="false">G-2</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q13-ans4" name="answer-13" value="G-3" />
+                <button type="button" class="answer-btn" data-for="q13-ans4" data-correct="true">G-3</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q13-ans5" name="answer-13" value="G-4" />
+                <button type="button" class="answer-btn" data-for="q13-ans5" data-correct="false">G-4</button>
+            </div>
+            <button class="next-btn" data-next="question-14" style="display:none;">Próxima</button>
+        </div>
+        <div class="question" id="question-14" style="display:none;">
+            <img src="./Imagens/Animes/quiz-one-piece/n14.jpeg" alt="imagem de referencia"
+                class="quiz-image-dificil">
+            <h2>Qual era o número de prisioneiro do Bon Clay em Impel Down?</h2>
+
+            <div class="answer-row">
+                <input type="radio" id="q14-ans1" name="answer-14" value="642" />
+                <button type="button" class="answer-btn" data-for="q14-ans1" data-correct="false">642</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q14-ans2" name="answer-14" value="567" />
+                <button type="button" class="answer-btn" data-for="q14-ans2" data-correct="false">567</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q14-ans3" name="answer-14" value="658" />
+                <button type="button" class="answer-btn" data-for="q14-ans3" data-correct="false">658</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q14-ans4" name="answer-14" value="715" />
+                <button type="button" class="answer-btn" data-for="q14-ans4" data-correct="false">715</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q14-ans5" name="answer-14" value="626" />
+                <button type="button" class="answer-btn" data-for="q14-ans5" data-correct="true">626</button>
+            </div>
+            <button class="next-btn" data-next="question-15" style="display:none;">Próxima</button>
+        </div>
+        <div class="question" id="question-15" style="display:none;">
+            <img src="./Imagens/Animes/quiz-one-piece/n15.png" alt="imagem de referencia"
+                class="quiz-image-dificil">
+            <h2> Quem disse a seguinte frase?  “Estive esperando por uma chance de encontrar alguém como você...”</h2>
+
+            <div class="answer-row">
+                <input type="radio" id="q15-ans1" name="answer-15" value="Shiryu" />
+                <button type="button" class="answer-btn" data-for="q15-ans1" data-correct="true">Shiryu</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q15-ans2" name="answer-15" value="Zoro" />
+                <button type="button" class="answer-btn" data-for="q15-ans2" data-correct="false">"Zoro"</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q15-ans3" name="answer-15" value="Kozuki Oden" />
+                <button type="button" class="answer-btn" data-for="q15-ans3" data-correct="false">"Kozuki Oden"</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q15-ans4" name="answer-15" value="Eustass Kid"/>
+                <button type="button" class="answer-btn" data-for="q15-ans4" data-correct="false">"Eustass Kid"</button>
+            </div>
+            <div class="answer-row">
+                <input type="radio" id="q15-ans5" name="answer-15" value="Sanji" />
+                <button type="button" class="answer-btn" data-for="q15-ans5" data-correct="false">"Sanji"</button>
+            </div>
+            <a href="./respostaonepiece.html"><button class="next-btn" style="display:none;">Terminar</button></a>
+        </div>
+        
+    </div>
+</body>
+
+</html>

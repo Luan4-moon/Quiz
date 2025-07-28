@@ -147,11 +147,11 @@ h1 {
 
 .card img {
   width: 100%;
-  height: 250px; 
+  height: 280px;
   object-fit: cover;
   display: block;
-  box-shadow: 0 0 10px white; 
-  border-radius: 12px; 
+  box-shadow: 0 0 10px white;
+  border-radius: 12px;
 }
 
 .nome {
@@ -166,8 +166,9 @@ h1 {
   pointer-events: none;
 }
 
-/*quiz*/
+/*quiz APRESENTAÇÃO*/
 body.dark-mode .quiz-wrapper,
+body.dark-mode .quiz-container,
 body.dark-mode .card,
 body.dark-mode .caixa-branca {
   background-color: white;
@@ -189,7 +190,10 @@ body.dark-mode .caixa-branca {
 }
 
 .quiz-image {
-  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 400px;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.603);
   margin-bottom: 2rem;
@@ -219,6 +223,7 @@ body.dark-mode .caixa-branca {
   text-decoration: none;
   display: inline-block;
   transition: background-color 0.3s ease;
+  text-align: center;
 }
 
 .start-btn:hover {
@@ -239,4 +244,190 @@ body.dark-mode .caixa-branca {
   .quiz-card h1 {
     font-size: 1.3rem;
   }
+}
+
+/*QUIZ*/
+.quiz-container {
+  background: white;
+  border-radius: 8px;
+  padding: 20px 30px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quiz-container h1 {
+  font-weight: bolder;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question h2 {
+  text-align: center;
+}
+
+.answer-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 15px;
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+button.answer-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+  flex-grow: 1;
+  transition: background-color 0.3s ease;
+}
+
+button.answer-btn:hover:not(.disabled) {
+  background-color: #ddd;
+}
+
+button.answer-btn.correct {
+  background-color: #4caf50;
+  color: white;
+}
+
+button.answer-btn.incorrect {
+  background-color: #f44336;
+  color: white;
+}
+
+button.answer-btn.disabled {
+  cursor: default;
+}
+
+.next-btn {
+  margin-top: 30px;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #b046ca;
+  color: white;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  display: none;
+}
+
+.next-btb:hover {
+  background-color: #7FFF7F;
+}
+
+.next-btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.quiz-image-facil {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgb(0, 255, 42);
+  margin-bottom: 2rem;
+}
+
+.quiz-image-medio {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgb(238, 255, 0);
+  margin-bottom: 2rem;
+}
+
+.quiz-image-dificil {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgb(255, 0, 0);
+  margin-bottom: 2rem;
+}
+
+/*resultado*/
+.resposta {
+  background: white;
+  border-radius: 8px;
+  padding: 40px 30px;
+  max-width: 600px;
+  width: 100%;
+  min-height: 550px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.resposta h1 {
+  color: #131313;
+}
+
+.percentage {
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #4caf50;
+}
+
+.message {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.botao {
+  display: block;       
+  margin-left: auto;    
+  margin-right: auto;  
+  margin-top: 30px;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+}
+
+#retryBtn {
+  background-color: #b046ca;
+  color: white;
+}
+
+#retryBtn:hover {
+  background-color: #e5ff00;
+  color: #131313;
+}
+
+#exitBtn {
+  background-color: #7FFF7F;
+  color: white;
+}
+
+#exitBtn:hover {
+  background-color: #ca4646;
 }
